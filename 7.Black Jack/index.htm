@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="./css/bootstrap4.css">
+    <link rel="stylesheet" href="./css/css.css">
+</head>
+
+<body>
+    <div class="container-game">
+        <div class='headers'>
+            <h1>Black Jack</h1>
+            <h2><span id='result'></span></h2>
+        </div>
+        
+        <div class="row1">
+            <div id="you-box">
+                <h2><span id="pl1">You</span>: <span id='yscore'>0</span></h2>
+            </div>
+            <div id="bot-box">
+                <h2><span id="pl2">Bot</span>: <span id='bscore'>0</span></h2>
+            </div>
+        </div>
+        
+        <div class="row2">
+       
+            <div>
+                <button class="btn-lg btn-primary mr-2" id='yturn'>Your Turn</button>
+                <button class="btn-lg btn-warning mr-2" id='ystand'>Stand</button>
+                
+                <button class="btn-lg btn-secondary mr-2" id='p2'>2</button>
+                <button class="btn-lg btn-danger mr-2" id='reset'>Next Game</button>
+            </div>
+        </div>
+        
+        <div class="row3">
+            <table>
+                <tr>
+                    <th>Win</th>
+                    <th>Lose</th>
+                    <th>Draw</th>
+                </tr>
+                <tr>
+                    <td id='win'>0</td>
+                    <td id='lose'>0</td>
+                    <td id='draw'>0</td>
+                </tr>
+            </table>
+            <table id ="p2s">
+                <tr>
+                    <th>Win</th>
+                    <th>Lose</th>
+                    <th>Draw</th>
+                </tr>
+                <tr>
+                    <td id='win2'>0</td>
+                    <td id='lose2'>0</td>
+                    <td id='draw2'>0</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="row4">
+            <button class="btn-lg mr-2 btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"> Player Mode</button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item"  id='sp' href="#">Single Player</a></li>
+              <li><a class="dropdown-item"  id='mp' href="#">Multi Player</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <script src="./js/js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+
+</html>

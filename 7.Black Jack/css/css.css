@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Potta+One&display=swap');
+
+body{
+    background-image: url("https://t3.ftcdn.net/jpg/02/20/94/12/240_F_220941219_NTXTsDbG0W1jDj1eso9VGaJYrEwIbGWo.jpg");
+    background-position: center;
+    background-attachment: fixed;       
+    background-size: cover;
+    transition: .5s;
+}
+
+
+.container-game{
+    background-image: linear-gradient(to right,rgb(0, 255, 0), rgb(251, 255, 0), rgb(0, 255, 0)); /* Standard syntax; must be last */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+ 
+    font-family: 'Averia Serif Libre', cursive;
+
+    font-size: 2vw;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    /* border: 2px solid black; */
+}
+
+.headers{
+    -webkit-text-stroke: 2px black;
+    font-family: 'Potta one', cursive;
+}
+
+.row1,.row2,.row3,.row4{ 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    /* border: 2px solid black; */
+}
+
+.row1 div  {
+    border-radius: 3%;
+    flex: 1;
+    box-shadow: 0px 0px 43px -6px black;
+    margin: 5px;
+    height: 400px;;
+}
+
+.row1 div h2 {
+    padding: 5px;
+}
+
+.row2 div button{
+    width: max-content;
+}
+
+table {
+    margin: 5px;
+    border-radius: 3%;
+    flex: 1;
+    box-shadow: 0px 0px 43px -6px black;
+}
+
+.row1 img{
+    margin: 10px;
+    margin-top: 0;
+    width : 100px;
+    height: 150px;
+}
+
+@media screen and (max-width:576px){
+    .container-game{
+        width: 100%;
+    }
+
+    .row1 img{
+        margin: 10px;
+        margin-top: 0;
+        width : 60px;
+        height: 90px;
+    }
+
+    .row3{
+        font-size: 4vw;
+    }
+}

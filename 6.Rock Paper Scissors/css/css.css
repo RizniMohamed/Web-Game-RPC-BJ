@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
+
+body{
+    background-image: url("https://image.freepik.com/free-vector/vector-images-forest-daytime_46176-155.jpg");
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed;       
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%; 
+    transition: .5s;
+}
+.container{
+    background-image: linear-gradient(to right,rgb(0, 255, 0), rgb(251, 255, 0), rgb(0, 255, 0)); /* Standard syntax; must be last */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-stroke: 1px black;
+    
+    font-family: 'Shojumaru', cursive;
+    font-size: 2vw;
+    width: 75%;
+    margin: auto;
+    border-radius: 3%;
+    text-align: center;
+}
+
+.flex-box {
+    border-radius: 3%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.container > div > img , .winPage{
+    width: 20vw;
+    height: 20vw;
+    margin: 10px;
+    box-shadow: 0 10px 50px black;
+    border-radius: 25%;
+    transition: .5s;    
+}
+.container > div > img:hover{
+    margin: 10px;
+    box-shadow: 0 10px 50px blue;
+   
+}
+
+@media screen and (max-width:576px){
+    .container{
+        font-size: 3vw;
+        width: 100%;
+    }
+}
